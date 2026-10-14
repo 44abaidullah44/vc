@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F5EFE3">
+<title>UR TRADER — Forex & Market Education</title>
+<meta name="description" content="UR TRADER — practical trading education, market analysis, forex learning and community.">
+<style>
+:root{--bg:#f5efe3;--surface:#fffdf8;--surface2:#f0e7d8;--text:#241f18;--muted:#746b5d;--gold:#c98520;--gold2:#f0bb58;--line:#e3d7c4;--shadow:0 20px 60px #5e42141a;--heroGlow:#e8d2a5}
+[data-theme="dark"]{--bg:#111111;--surface:#1b1b1b;--surface2:#25231f;--text:#f7f2e9;--muted:#b9b0a2;--gold:#edb34c;--gold2:#ffd477;--line:#39342c;--shadow:0 20px 60px #0008;--heroGlow:#47351c}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Plus Jakarta Sans",Arial,sans-serif;line-height:1.6;transition:background .25s,color .25s}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:78px;display:flex;align-items:center;gap:24px}.brand{display:flex;align-items:center;gap:11px;min-width:max-content}.brand-avatar{height:44px;width:44px;border-radius:14px;background:linear-gradient(135deg,var(--gold2),var(--gold));display:grid;place-items:center;overflow:hidden;border:1px solid #dca84b}.brand-avatar img{width:100%;height:100%;object-fit:cover}.brand b{display:block;letter-spacing:1.6px;font-size:15px}.brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:2px;font-weight:800}.learning-nav{display:flex;gap:24px;margin-left:auto}.learning-nav a{font-size:12px;font-weight:700;color:var(--muted);transition:.2s}.learning-nav a:hover{color:var(--gold)}.nav-actions{display:flex;align-items:center;gap:10px}.social-dock{display:flex;gap:7px}.icon-link,.theme-toggle{width:36px;height:36px;border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;background:var(--surface);color:var(--text);cursor:pointer}.icon-link svg{width:16px;height:16px}.theme-toggle{font-size:18px}.menu-toggle{display:none}
+.home-hero{padding:36px 0 28px}.home-hero-card{position:relative;isolation:isolate;min-height:500px;border:1px solid var(--line);border-radius:30px;overflow:hidden;background:radial-gradient(ellipse at 78% 45%,var(--heroGlow),transparent 46%),var(--surface);box-shadow:var(--shadow);display:grid;grid-template-columns:1.05fr .95fr;align-items:center;padding:56px 6%;gap:22px}.home-hero-card:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.35;background-image:linear-gradient(135deg,transparent 48%,var(--line) 49%,transparent 50%);background-size:42px 42px;mask-image:linear-gradient(90deg,transparent,black)}.home-hero-copy{position:relative;z-index:2}.home-hero-badge,.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-size:10px;font-weight:900;letter-spacing:1.8px;text-transform:uppercase}.home-hero-badge{border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:var(--surface)}h1{font-size:clamp(38px,5vw,65px);letter-spacing:-3px;line-height:1.04;margin:20px 0 18px;font-weight:800}h1 span,h1 strong{display:block}h1 strong{color:var(--gold);font-weight:800}.home-hero-copy>p{max-width:490px;color:var(--muted);font-size:15px}.home-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:13px;padding:13px 19px;font-size:12px;font-weight:800;transition:transform .2s,box-shadow .2s;cursor:pointer;border:1px solid transparent}.btn:hover{transform:translateY(-2px)}.gold-btn{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#21180a;box-shadow:0 10px 24px #c9852030}.secondary-btn{background:var(--surface);border-color:var(--line);color:var(--text)}.home-hero-visual{position:relative;min-height:360px;display:grid;place-items:center}.portrait-frame{width:min(330px,90%);height:360px;position:relative;z-index:1;border-radius:48% 48% 25px 25px;overflow:hidden;border:1px solid #d7b16c;background:linear-gradient(145deg,#f7dca1,#8c5d1d);box-shadow:0 28px 55px #4c321d2b}.portrait-frame img{width:100%;height:100%;object-fit:cover}.portrait-placeholder{height:100%;display:grid;place-items:center;text-align:center;color:#493213;background:radial-gradient(circle at 50% 35%,#fff1c8,#d7a34b 65%,#8b571a)}.portrait-placeholder .monogram{font-size:82px;font-weight:900;letter-spacing:-8px}.portrait-placeholder small{display:block;letter-spacing:5px;font-weight:900}.float-card{position:absolute;z-index:3;background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:12px 15px;box-shadow:var(--shadow);font-size:11px;font-weight:800;animation:float 5s ease-in-out infinite}.float-card small{display:block;color:var(--muted);font-size:9px;font-weight:600}.float-card.market{top:24px;left:-4px}.float-card.growth{right:-2px;bottom:48px;animation-delay:-2s}.float-card.chart{right:12px;top:58px;animation-delay:-1s}.pulse{display:inline-block;width:7px;height:7px;border-radius:50%;background:#46ae75;margin-right:6px}.home-hero-stats{grid-column:1/-1;display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}.stat-chip{padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:color-mix(in srgb,var(--surface) 78%,transparent);font-size:11px;color:var(--muted)}.stat-chip b{color:var(--text);margin-right:5px}
+.promo{padding:12px 0 56px}.promo-link{display:grid;grid-template-columns:74px 1fr auto;align-items:center;gap:20px;border-radius:20px;padding:24px 28px;background:linear-gradient(110deg,#201a10,#4a3417);color:#fff6e4;box-shadow:var(--shadow);border:1px solid #765522;position:relative;overflow:hidden}.promo-link:after{content:"";position:absolute;width:260px;height:260px;border:1px solid #d7a64a33;border-radius:50%;right:9%;top:-150px;box-shadow:0 0 0 30px #d7a64a0a,0 0 0 60px #d7a64a08}.promo-avatar{height:68px;width:68px;border-radius:18px;background:linear-gradient(135deg,#ffe3a2,#b57820);display:grid;place-items:center;color:#2a1d0a;font-size:25px;font-weight:900}.promo-copy p{margin:0;font-size:clamp(15px,2vw,22px);font-weight:800;line-height:1.35}.promo-copy p em{font-style:normal;color:#f3bf55}.promo-copy small{display:block;color:#d4c6ac;font-size:11px;margin-top:7px}.promo-side{position:relative;z-index:1;text-align:right}.promo-side small{display:block;color:#e0cda8;font-size:10px;letter-spacing:1.5px}.promo-side strong{display:block;color:#ffd06e;font-size:15px}
+section.content-section{padding:48px 0}.head{text-align:center;max-width:660px;margin:0 auto 30px}.head .label{font-size:10px;color:var(--gold);font-weight:900;letter-spacing:2px}.head h2{font-size:clamp(27px,3vw,40px);line-height:1.15;letter-spacing:-1.4px;margin:10px 0}.head p{color:var(--muted);font-size:13px;margin:0}.social-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.social-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:23px;transition:.25s;min-height:150px}.social-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--gold)}.social-icon{height:40px;width:40px;border-radius:13px;background:var(--surface2);display:grid;place-items:center;color:var(--gold);margin-bottom:14px}.social-icon svg{width:20px;height:20px}.social-card b{display:block;font-size:14px}.social-card p{font-size:11px;color:var(--muted);margin:3px 0 12px}.social-card span{font-size:10px;color:var(--gold);font-weight:900}
+.videos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.video-card{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--surface);transition:.25s}.video-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.video-thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#21190d,#9d691c);display:grid;place-items:center;position:relative;overflow:hidden}.video-thumb:before{content:"";position:absolute;width:180px;height:180px;border:1px solid #ffd77b55;border-radius:50%;box-shadow:0 0 0 25px #ffd77b0d,0 0 0 50px #ffd77b0a}.play{position:relative;width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:#fff2d9;color:#6d430b;padding-left:3px;font-size:19px}.video-thumb small{position:absolute;left:14px;bottom:12px;color:#fff0d0;font-size:10px;font-weight:900;letter-spacing:2px}.video-info{padding:17px}.video-info b{font-size:14px;display:block}.video-info p{font-size:11px;color:var(--muted);margin:5px 0 0}.about-shell{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:clamp(24px,5vw,55px);box-shadow:var(--shadow)}.about-copy h2{font-size:clamp(30px,4vw,44px);letter-spacing:-1.8px;line-height:1.1;margin:12px 0 18px}.about-copy p{color:var(--muted);font-size:13px}.about-copy p strong{color:var(--text)}.about-quote{border-left:3px solid var(--gold);padding:13px 18px;background:var(--surface2);border-radius:0 12px 12px 0;font-size:14px;font-weight:700;margin:22px 0}.about-quote cite{display:block;font-style:normal;font-size:10px;color:var(--gold);margin-top:6px}.about-profile{text-align:center}.about-photo{height:200px;width:200px;border-radius:50%;margin:0 auto 18px;background:linear-gradient(135deg,#ffe1a0,#b97a21);border:5px solid var(--surface2);overflow:hidden;display:grid;place-items:center;color:#41280a;font-size:56px;font-weight:900}.about-photo img{width:100%;height:100%;object-fit:cover}.about-profile h3{margin:0;font-size:21px}.about-profile p{color:var(--muted);font-size:11px;margin:4px 0 15px}.about-tags{display:flex;justify-content:center;gap:7px;flex-wrap:wrap}.about-tags span{background:var(--surface2);border-radius:999px;padding:6px 10px;font-size:9px;font-weight:800;color:var(--gold)}
+footer{margin-top:55px;background:var(--surface);border-top:1px solid var(--line);padding:48px 0 18px}.footer-grid{display:grid;grid-template-columns:1.4fr .7fr .8fr 1fr;gap:30px}.footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:12px}.footer-logo .mini-logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--gold2),var(--gold));display:grid;place-items:center;font-weight:900;color:#281b08}.footer-logo b{display:block;font-size:13px;letter-spacing:1px}.footer-logo small{display:block;font-size:9px;color:var(--muted);letter-spacing:1.5px}.footer-grid p{font-size:11px;color:var(--muted);max-width:270px}.footer-grid h3{font-size:12px;margin:5px 0 13px}.footer-links{display:grid;gap:8px}.footer-links a{font-size:11px;color:var(--muted)}.footer-links a:hover{color:var(--gold)}.footer-cta{background:var(--surface2);border:1px solid var(--line);padding:17px;border-radius:15px}.footer-cta p{margin:0 0 12px}.footer-bottom{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:32px;padding-top:17px;color:var(--muted);font-size:10px}.disclaimer{max-width:700px}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .65s,transform .65s}.reveal.visible{opacity:1;transform:none}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;background:var(--text);color:var(--bg);padding:10px 16px;border-radius:10px;font-size:12px;z-index:100;transition:.25s;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:900px){.learning-nav{gap:13px}.social-dock{display:none}.home-hero-card{padding:42px 5%;grid-template-columns:1fr .85fr}.home-hero-visual{min-height:320px}.portrait-frame{height:310px}.float-card.market{left:-15px}.social-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.wrap{width:min(100% - 28px,1160px)}.nav{height:68px;gap:10px}.brand-avatar{width:39px;height:39px}.brand b{font-size:13px}.brand small{font-size:8px}.learning-nav{display:none}.nav-actions{margin-left:auto}.home-hero{padding-top:18px}.home-hero-card{display:flex;flex-direction:column;align-items:stretch;padding:30px 22px 22px;gap:0;border-radius:23px}.home-hero-copy{order:0}.home-hero-copy>p{font-size:13px}.home-hero-visual{order:1;min-height:300px;margin-top:10px}.portrait-frame{height:300px;width:250px}.float-card.market{left:0;top:24px}.float-card.chart{right:0;top:30px}.float-card.growth{right:0;bottom:30px}.home-hero-stats{order:2;margin-top:15px}.promo{padding:10px 0 30px}.promo-link{grid-template-columns:48px 1fr;padding:18px;gap:13px}.promo-avatar{height:48px;width:48px;border-radius:14px;font-size:19px}.promo-copy p{font-size:14px}.promo-copy small{font-size:10px}.promo-side{grid-column:2;text-align:left}.content-section{padding:34px 0!important}.head{margin-bottom:22px}.social-grid{gap:10px}.social-card{padding:15px;min-height:138px}.videos{grid-template-columns:1fr}.video-card:not(:first-child){display:none}.about-shell{grid-template-columns:1fr;gap:30px;padding:25px}.about-profile{order:-1}.about-photo{height:160px;width:160px}.footer-grid{grid-template-columns:1fr 1fr;gap:24px 15px}.footer-grid>div:first-child,.footer-cta{grid-column:1/-1}.footer-bottom{font-size:9px}h1{letter-spacing:-2px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="UR TRADER home"><span class="brand-avatar" id="brandAvatar"><span>UR</span></span><span><b data-setting="brandName">UR TRADER</b><small data-setting="tagline">TRADE SMART · GROW STRONG</small></span></a>
+    <nav class="learning-nav" aria-label="Main navigation"><a href="#top">Home</a><a href="#community">Community</a><a href="#videos">Videos</a><a href="#about">About</a></nav>
+    <div class="nav-actions"><div class="social-dock" id="socialDock"></div><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">☾</button></div>
+  </div>
+</header>
+<main id="top">
+  <section class="home-hero"><div class="wrap"><div class="home-hero-card reveal">
+    <div class="home-hero-copy"><span class="home-hero-badge">♛ <span data-setting="heroBadge">FOREX EDUCATION & MARKET INSIGHTS</span></span>
+      <h1><span data-setting="headline1">Learn the Market.</span><span data-setting="headline2">Master Your</span><strong data-setting="headline3">Trading Journey.</strong></h1>
+      <p data-setting="heroLead">Practical forex education, structured market analysis and a community focused on smarter trading decisions.</p>
+      <div class="home-hero-actions"><a class="btn gold-btn" id="primaryCta" href="#community">✦ Join the Community</a><a class="btn secondary-btn" id="secondaryCta" href="#videos">▶ Explore Videos</a></div>
+    </div>
+    <div class="home-hero-visual">
+      <div class="portrait-frame" id="heroPortrait"><div class="portrait-placeholder"><div><div class="monogram">UR</div><small>TRADER</small></div></div></div>
+      <div class="float-card market"><span class="pulse"></span>Market Insights<small>Learn. Analyse. Improve.</small></div>
+      <div class="float-card chart">LIVE LEARNING<small>Gold · Forex · Charts</small></div>
+      <div class="float-card growth">Trading Education<small>Process over promises</small></div>
+    </div>
+    <div class="home-hero-stats"><div class="stat-chip"><b>01</b> Learn the basics</div><div class="stat-chip"><b>02</b> Build a process</div><div class="stat-chip"><b>03</b> Manage risk</div></div>
+  </div></div></section>
+  <section class="promo"><div class="wrap"><a class="promo-link reveal" id="promoLink" href="#community"><div class="promo-avatar">UR</div><div class="promo-copy"><p><span data-setting="promoLine1">Build your trading knowledge</span><br><em data-setting="promoLine2">with UR TRADER.</em></p><small data-setting="promoDisclaimer">Education first. Every trade involves risk.</small></div><div class="promo-side"><small>JOIN THE COMMUNITY</small><strong data-setting="promoSide">Learn • Practice • Grow ↗</strong></div></a></div></section>
+  <section id="community" class="content-section"><div class="wrap"><div class="head reveal"><span class="label">JOIN THE COMMUNITY</span><h2 data-setting="communityTitle">Connect with UR TRADER</h2><p data-setting="communitySubtitle">Follow for educational content, market discussions and updates.</p></div><div class="social-grid" id="socialGrid"></div></div></section>
+  <section id="videos" class="content-section"><div class="wrap"><div class="head reveal"><span class="label">FEATURED CONTENT</span><h2 data-setting="videosTitle">Learn at Your Own Pace</h2><p data-setting="videosSubtitle">Explore lessons, chart walkthroughs and trading mindset content.</p></div><div class="videos" id="videoGrid"></div></div></section>
+  <section id="about" class="content-section"><div class="wrap"><div class="about-shell reveal"><div class="about-copy"><span class="eyebrow">ABOUT UR TRADER</span><h2 data-setting="aboutTitle">A smarter approach to learning the markets.</h2><p><strong data-setting="aboutIntro">Welcome to UR TRADER.</strong> <span data-setting="aboutBody">This platform shares trading education, chart concepts and practical learning resources for people who want to understand the markets.</span></p><p data-setting="aboutMission">Our focus is on discipline, patience, risk awareness and continuous learning—not guaranteed results.</p><blockquote class="about-quote">“<span data-setting="aboutQuote">Trade with a plan. Learn from every decision.</span>”<cite>— <span data-setting="brandName">UR TRADER</span></cite></blockquote><a class="btn gold-btn" id="aboutButton" href="#community">Join the Community ↗</a></div><aside class="about-profile"><div class="about-photo" id="aboutPhoto"><span>UR</span></div><h3 data-setting="profileName">UR TRADER</h3><p data-setting="profileRole">Forex Education & Market Analysis</p><div class="about-tags"><span>FOREX EDUCATION</span><span>RISK AWARENESS</span><span>COMMUNITY</span></div></aside></div></div></section>
+</main>
+<footer><div class="wrap"><div class="footer-grid">
+  <div><div class="footer-logo"><div class="mini-logo">UR</div><div><b data-setting="brandName">UR TRADER</b><small data-setting="tagline">TRADE SMART · GROW STRONG</small></div></div><p data-setting="footerDescription">Forex education, market insights and community learning. Stay curious, stay disciplined and manage risk.</p><div class="footer-links" id="footerSocials"></div></div>
+  <div><h3>Platform</h3><div class="footer-links"><a href="#top">Home</a><a href="#community">Community</a><a href="#videos">Videos</a><a href="#about">About</a></div></div>
+  <div><h3>Follow Us</h3><div class="footer-links" id="footerSocialLinks"></div></div>
+  <div class="footer-cta"><h3 data-setting="footerCtaTitle">Ready to start learning?</h3><p data-setting="footerCtaText">Join our community and explore educational resources.</p><a class="btn gold-btn" id="footerCta" href="#community">Join UR TRADER ↗</a></div>
+</div><div class="footer-bottom"><span>© <span id="year"></span> <span data-setting="brandName">UR TRADER</span>. All rights reserved.</span><span class="disclaimer">Trading involves risk. Educational content is not financial advice and does not guarantee profits.</span></div></div></footer>
+<div class="toast" id="toast" role="status"></div>
+<script>
+/* QUICK CUSTOMIZATION: edit the CONFIG object below, then save this file. */
+const CONFIG = {
+  brandName: "UR TRADER",
+  tagline: "TRADE SMART · GROW STRONG",
+  heroBadge: "FOREX EDUCATION & MARKET INSIGHTS",
+  headline1: "Learn the Market.",
+  headline2: "Master Your",
+  headline3: "Trading Journey.",
+  heroLead: "Practical forex education, structured market analysis and a community focused on smarter trading decisions.",
+  promoLine1: "Build your trading knowledge",
+  promoLine2: "with UR TRADER.",
+  promoDisclaimer: "Education first. Every trade involves risk.",
+  promoSide: "Learn • Practice • Grow ↗",
+  communityTitle: "Connect with UR TRADER",
+  communitySubtitle: "Follow for educational content, market discussions and updates.",
+  videosTitle: "Learn at Your Own Pace",
+  videosSubtitle: "Explore lessons, chart walkthroughs and trading mindset content.",
+  aboutTitle: "A smarter approach to learning the markets.",
+  aboutIntro: "Welcome to UR TRADER.",
+  aboutBody: "This platform shares trading education, chart concepts and practical learning resources for people who want to understand the markets.",
+  aboutMission: "Our focus is on discipline, patience, risk awareness and continuous learning—not guaranteed results.",
+  aboutQuote: "Trade with a plan. Learn from every decision.",
+  profileName: "UR TRADER",
+  profileRole: "Forex Education & Market Analysis",
+  footerDescription: "Forex education, market insights and community learning. Stay curious, stay disciplined and manage risk.",
+  footerCtaTitle: "Ready to start learning?",
+  footerCtaText: "Join our community and explore educational resources.",
+  /* Replace these sample links with your real profile/group/course URLs. Use full https:// URLs. */
+  links: {
+    whatsapp: "https://wa.me/923066056536",
+    youtube: "https://youtube.com/",
+    tiktok: "https://tiktok.com/@urtraders100",
+    facebook: "https://facebook.com/",
+    instagram: "https://instagram.com/",
+    vip: "https://wa.me/923066056536",
+    course: "https://wa.me/923066056536"
+  },
+  /* Optional: put a public image URL here, or leave blank to use the UR monogram placeholder. */
+  photoUrl: "",
+  videos: [
+    {title:"Gold Chart Walkthrough", description:"Learn how to read market structure and key price areas.", url:"https://youtube.com/"},
+    {title:"Trading Risk Management", description:"Understand position sizing, stop losses and discipline.", url:"https://youtube.com/"},
+    {title:"Forex Learning Session", description:"Build your knowledge step by step with educational content.", url:"https://youtube.com/"}
+  ]
+};
+const iconPaths = {
+ youtube:'<rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/>',
+ tiktok:'<path d="M14 3v11.5a4.5 4.5 0 1 1-4-4.47"/><path d="M14 3c.5 3 2.5 5 5 5"/>',
+ facebook:'<path d="M14 8h4V4h-4a5 5 0 0 0-5 5v3H6v4h3v5h4v-5h4l1-4h-5V9a1 1 0 0 1 1-1z"/>',
+ instagram:'<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/>',
+ whatsapp:'<path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-5.1A8.5 8.5 0 1 1 21 11.5z"/><path d="M8 8.5c.7 3 2.5 4.8 5.5 5.5l1.2-1.2 2 .8c.2.1.3.3.2.5-.3 1-1.2 1.6-2.2 1.5-3.9-.4-7.4-3.9-7.8-7.8-.1-1 .5-1.9 1.5-2.2.2-.1.4 0 .5.2l.8 2z"/>'
+};
+const labels = {youtube:"YouTube",tiktok:"TikTok",facebook:"Facebook",instagram:"Instagram",whatsapp:"WhatsApp"};
+const descriptions = {youtube:"Videos, lessons and chart walkthroughs.",tiktok:"Short trading tips and updates.",facebook:"Community news and announcements.",instagram:"Updates, stories and learning moments.",whatsapp:"Contact us and ask about learning options."};
+function svgIcon(name){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+iconPaths[name]+'</svg>'}
+function safeUrl(url){try{const u=new URL(url,location.href);return ['https:','http:'].includes(u.protocol)?u.href:'#'}catch{return '#'}}
+function linkItem(name, cls='icon-link'){return '<a class="'+cls+'" href="'+safeUrl(CONFIG.links[name]||'#')+'" target="_blank" rel="noopener noreferrer" aria-label="'+labels[name]+'">'+svgIcon(name)+'</a>'}
+function renderSocials(){
+ const names=['youtube','tiktok','facebook','instagram','whatsapp'];
+ document.getElementById('socialDock').innerHTML=names.map(n=>linkItem(n)).join('');
+ document.getElementById('socialGrid').innerHTML=names.map(n=>'<a class="social-card" href="'+safeUrl(CONFIG.links[n]||'#')+'" target="_blank" rel="noopener noreferrer"><div class="social-icon">'+svgIcon(n)+'</div><b>'+labels[n]+'</b><p>'+descriptions[n]+'</p><span>VISIT PROFILE ↗</span></a>').join('')+
+ '<a class="social-card" href="'+safeUrl(CONFIG.links.course)+'" target="_blank" rel="noopener noreferrer"><div class="social-icon">✦</div><b>Join a Course</b><p>Ask about available trading education sessions.</p><span>EXPLORE COURSES ↗</span></a>'+
+ '<a class="social-card" href="'+safeUrl(CONFIG.links.vip)+'" target="_blank" rel="noopener noreferrer"><div class="social-icon">♛</div><b>VIP Community</b><p>Contact us for community details and access.</p><span>LEARN MORE ↗</span></a>';
+ document.getElementById('footerSocials').innerHTML=names.map(n=>linkItem(n,'icon-link')).join(' ');
+ document.getElementById('footerSocialLinks').innerHTML=names.map(n=>'<a href="'+safeUrl(CONFIG.links[n]||'#')+'" target="_blank" rel="noopener noreferrer">'+labels[n]+' ↗</a>').join('')+'<a href="'+safeUrl(CONFIG.links.vip)+'" target="_blank" rel="noopener noreferrer">VIP Group ↗</a>';
+}
+function renderVideos(){document.getElementById('videoGrid').innerHTML=CONFIG.videos.map(v=>'<a class="video-card" href="'+safeUrl(v.url)+'" target="_blank" rel="noopener noreferrer"><div class="video-thumb"><div class="play">▶</div><small>UR TRADER · LEARN</small></div><div class="video-info"><b>'+escapeHtml(v.title)+'</b><p>'+escapeHtml(v.description)+'</p></div></a>').join('')}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+document.querySelectorAll('[data-setting]').forEach(el=>{const k=el.dataset.setting;if(CONFIG[k]!==undefined)el.textContent=CONFIG[k]});
+function applyPhoto(){if(!CONFIG.photoUrl)return;const url=safeUrl(CONFIG.photoUrl);document.getElementById('brandAvatar').innerHTML='<img src="'+url+'" alt="UR TRADER logo/photo">';document.getElementById('heroPortrait').innerHTML='<img src="'+url+'" alt="UR TRADER profile photo" style="width:100%;height:100%;object-fit:cover">';document.getElementById('aboutPhoto').innerHTML='<img src="'+url+'" alt="UR TRADER profile photo">'}
+document.getElementById('primaryCta').href=safeUrl(CONFIG.links.vip);document.getElementById('aboutButton').href=safeUrl(CONFIG.links.course);document.getElementById('footerCta').href=safeUrl(CONFIG.links.vip);document.getElementById('secondaryCta').href=safeUrl(CONFIG.links.youtube);document.getElementById('promoLink').href=safeUrl(CONFIG.links.vip);
+renderSocials();renderVideos();applyPhoto();document.getElementById('year').textContent=new Date().getFullYear();
+const themeToggle=document.getElementById('themeToggle');
+function setTheme(t){document.documentElement.dataset.theme=t;themeToggle.textContent=t==='dark'?'☀':'☾';themeToggle.setAttribute('aria-label',t==='dark'?'Switch to light theme':'Switch to dark theme');try{localStorage.setItem('urtrader-theme',t)}catch(e){}}
+try{setTheme(localStorage.getItem('urtrader-theme')||'light')}catch(e){setTheme('light')}
+themeToggle.addEventListener('click',()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark'));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
